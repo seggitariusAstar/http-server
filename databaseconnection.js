@@ -7,8 +7,8 @@ app.listen(3000,()=>{
 
   console.log("server is running at the port 3000")
 })
-mongoose.connect("mongodb+srv://admin:Anirudhtyagi@cluster0.tqw6gpy.mongodb.net/user-app")
-
+mongoose.connect("mongodb+srv://admin:<password>@cluster0.tqw6gpy.mongodb.net/user-app")
+//here in the above url you need to give your username in place of the admin and your password in place of the password
 const Users=mongoose.model('Users',{
 
  name:String,
